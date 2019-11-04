@@ -8,33 +8,33 @@ edition = "2018"
 serde = { version = "1.0.101", optional = true, features = ["derive"] }
 safe-mix = { version = "1.0.0", default-features = false }
 codec = { package = "parity-scale-codec", version = "1.0.0", default-features = false, features = ["derive"] }
-rstd = { package = "sr-std", path = "../substrate/core/sr-std", default_features = false }
-runtime-io = { package = "sr-io", path = "../substrate/core/sr-io", default_features = false }
-version = { package = "sr-version", path = "../substrate/core/sr-version", default_features = false }
-support = { package = "srml-support", path = "../substrate/srml/support", default_features = false }
-primitives = { package = "substrate-primitives", path = "../substrate/core/primitives", default_features = false }
+rstd = { package = "sr-std", path = "../substrate/core/sr-std", default-features = false }
+runtime-io = { package = "sr-io", path = "../substrate/core/sr-io", default-features = false }
+version = { package = "sr-version", path = "../substrate/core/sr-version", default-features = false }
+support = { package = "srml-support", path = "../substrate/srml/support", default-features = false }
+primitives = { package = "substrate-primitives", path = "../substrate/core/primitives", default-features = false }
 substrate-session = { path = "../substrate/core/session", default-features = false }
-balances = { package = "srml-balances", path = "../substrate/srml/balances", default_features = false }
-aura = { package = "srml-aura", path = "../substrate/srml/aura", default_features = false }
-aura-primitives = { package = "substrate-consensus-aura-primitives", path = "../substrate/core/consensus/aura/primitives", default_features = false }
-grandpa = { package = "srml-grandpa", path = "../substrate/srml/grandpa", default_features = false }
-executive = { package = "srml-executive", path = "../substrate/srml/executive", default_features = false }
-indices = { package = "srml-indices", path = "../substrate/srml/indices", default_features = false }
-randomness-collective-flip = { package = "srml-randomness-collective-flip", path = "../substrate/srml/randomness-collective-flip", default_features = false }
-system = { package = "srml-system", path = "../substrate/srml/system", default_features = false }
-timestamp = { package = "srml-timestamp", path = "../substrate/srml/timestamp", default_features = false }
-sudo = { package = "srml-sudo", path = "../substrate/srml/sudo", default_features = false }
-transaction-payment = { package = "srml-transaction-payment", path = "../substrate/srml/transaction-payment", default_features = false }
-sr-primitives = { path = "../substrate/core/sr-primitives", default_features = false }
-client = { package = "substrate-client", path = "../substrate/core/client", default_features = false }
+balances = { package = "srml-balances", path = "../substrate/srml/balances", default-features = false }
+aura = { package = "srml-aura", path = "../substrate/srml/aura", default-features = false }
+aura-primitives = { package = "substrate-consensus-aura-primitives", path = "../substrate/core/consensus/aura/primitives", default-features = false }
+grandpa = { package = "srml-grandpa", path = "../substrate/srml/grandpa", default-features = false }
+executive = { package = "srml-executive", path = "../substrate/srml/executive", default-features = false }
+indices = { package = "srml-indices", path = "../substrate/srml/indices", default-features = false }
+randomness-collective-flip = { package = "srml-randomness-collective-flip", path = "../substrate/srml/randomness-collective-flip", default-features = false }
+system = { package = "srml-system", path = "../substrate/srml/system", default-features = false }
+timestamp = { package = "srml-timestamp", path = "../substrate/srml/timestamp", default-features = false }
+sudo = { package = "srml-sudo", path = "../substrate/srml/sudo", default-features = false }
+transaction-payment = { package = "srml-transaction-payment", path = "../substrate/srml/transaction-payment", default-features = false }
+sr-primitives = { path = "../substrate/core/sr-primitives", default-features = false }
+client = { package = "substrate-client", path = "../substrate/core/client", default-features = false }
 offchain-primitives = { package = "substrate-offchain-primitives", path = "../substrate/core/offchain/primitives", default-features = false }
 
 chrono = { version = "0.4", default-features = false, features = ["serde"] }
 itertools = { version = "0.8", default-features = false }
-rustls = { git = "https://github.com/ctz/rustls.git", default-features = false }
-webpki = { git = "https://github.com/briansmith/webpki.git", default-features = false }
+# rustls = { git = "https://github.com/ctz/rustls.git", default-features = false }
+# webpki = { git = "https://github.com/briansmith/webpki.git", default-features = false }
 sgx_types = { version = "1.0.9" }
-base64 = { version = "0.11", default_features = false }
+base64 = { version = "0.11", default-features = false }
 serde_json = { version = "1.0" }
 hex = { version = "0.4", default-features = false }
 
@@ -67,4 +67,5 @@ std = [
 	"safe-mix/std",
 	"offchain-primitives/std",
 	"substrate-session/std",
+	"base64/std"
 ]

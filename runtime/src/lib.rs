@@ -10,7 +10,7 @@ include!(concat!(env!("OUT_DIR"), "/wasm_binary.rs"));
 
 // extern crate webpki;
 // extern crate rustls;
-extern crate base64 as b64;
+extern crate base64;
 extern crate itertools;
 //extern crate serde_json;
 extern crate hex;
