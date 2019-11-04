@@ -1,3 +1,4 @@
 [submodule "substrate"]
 	path = substrate
-	url = https://github.com/paritytech/substrate.git
+	url = https://github.com/jasl/substrate.git
+	branch = upgrade_libp2p

@@ -2,6 +2,10 @@
 
 A new SRML-based Substrate node, ready for hacking.
 
+## Prepare
+
+`git submodule update --init`
+
 ## Build
 
 Install Rust:

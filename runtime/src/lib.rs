@@ -8,6 +8,14 @@
 #[cfg(feature = "std")]
 include!(concat!(env!("OUT_DIR"), "/wasm_binary.rs"));
 
+// extern crate webpki;
+// extern crate rustls;
+extern crate base64 as b64;
+extern crate itertools;
+//extern crate serde_json;
+extern crate hex;
+//extern crate sgx_types;
+
 use rstd::prelude::*;
 use primitives::OpaqueMetadata;
 use sr_primitives::{
